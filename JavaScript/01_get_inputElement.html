@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header">GetEelementBy</h1>
+    <a href="https://google.com" id="link">Google</a><br>
+    <input type="text" id="input">
+    <button onclick="input_button()">input</button>
+    <p id="inputItem"></p>
+
+    <hr>
+    <hr>
+    <script>
+        elem1 = document.getElementById('header');
+        document.write(elem1.firstChild.nodeValue + "</br>");
+        document.write(elem1.innerHTML + "</br>");
+
+        elem2 = document.getElementById('link');
+        document.write(elem2.innerHTML + "</br>");
+        document.write(elem2.firstChild.nodeValue);
+
+        function input_button() {
+            elem3 = document.getElementById('input');
+            //document.getElementById('inputItem').innerHTML=elem3.firstChild.nodeValue; //출력되지 않음
+            document.getElementById('inputItem').innerHTML=elem3.value;
+        }
+    </script>
+</body>
+
+</html>

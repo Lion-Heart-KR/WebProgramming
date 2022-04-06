@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+    </div>
+
+
+    <script>
+        elem1 = document.getElementById('box');
+        document.write("elem1 = document.getElementById('box')");
+        document.write("</br>elem1.childNodes[0] : " + elem1.childNodes[0] + "</br>");
+        document.write("elem1.firstChild    : " + elem1.firstChild + "</br>");
+        document.write("elem1.childNodes[1] : " + elem1.childNodes[1] + "</br>");
+        document.write("elem1.childNodes[1].nodeValue : " + elem1.childNodes[1].nodeValue + "</br>");
+        document.write("elem1.childNodes[1].innerHTML : " + elem1.childNodes[1].innerHTML + "</br>");
+        document.write("elem1.childNodes[1].firstChild : " + elem1.childNodes[1].firstChild + "</br>");
+        document.write("elem1.childNodes[1].firstChild.nodeValue : " + elem1.childNodes[1].firstChild.nodeValue + "</br>");
+        document.write("elem1.childNodes[2] : " + elem1.childNodes[2] + "</br>");
+        document.write("elem1.childNodes[3] : " + elem1.childNodes[3] + "</br>");
+        document.write("elem1.childNodes[3].firstChild : " + elem1.childNodes[3].firstChild + "</br>");
+        document.write("elem1.childNodes[3].firstChild.nodeValue : " + elem1.childNodes[3].firstChild.nodeValue + "</br>");
+
+        elem2 = document.getElementsByTagName('p');
+        document.write("</br></br>elem2 = getElementsByTagName('p')</br>");
+        document.write("elem2는 자식노드를 갖지 않는다. 같은 계층의 P노드들만 갖는다.</br>");
+        document.write("elem2.childNodes : "+elem2.childNodes+"</br>")
+        document.write("elem2[0] : "+elem2[0]+"</br>");
+        document.write("elem2[0].firstChild.nodeValue : "+elem2[0].firstChild.nodeValue+"</br>");
+        document.write("elem2[0].innerHTML : "+elem2[0].innerHTML+"</br>");
+    </script>
+    
+</body>
+
+</html>
