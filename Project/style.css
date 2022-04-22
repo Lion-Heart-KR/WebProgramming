@@ -80,7 +80,8 @@ body{margin: 0; padding: 0;font-family: 'Open Sans', sans-serif;}
     height: 150px;
 }
 .newsAndRank{display: flex; padding : 0 200px; background-color: #e1e2e1;}
-.newsAndRank p{text-align: center; background-color: #e1e2e1;}
+.newsAndRank p{text-align: center; background-color: #e1e2e1; position : relative;}
+.newsAndRank p>a{position :absolute; right: 10px; bottom:0px; text-decoration: none; color : lightcoral; font-size: 14px;}
 .newsAndRank>div ul{list-style: none; padding: 0;}
 .NAR{border : 1px solid black; margin : 10px;}
 #news{flex:1; background-color: #fff;}
