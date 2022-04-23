@@ -82,6 +82,7 @@ body{margin: 0; padding: 0;font-family: 'Open Sans', sans-serif;}
 .newsAndRank{display: flex; padding : 0 200px; background-color: #e1e2e1;}
 .newsAndRank p{text-align: center; background-color: #e1e2e1; position : relative;}
 .newsAndRank p>a{position :absolute; right: 10px; bottom:0px; text-decoration: none; color : lightcoral; font-size: 14px;}
+.newsAndRank p>a:hover{color : black;}
 .newsAndRank>div ul{list-style: none; padding: 0;}
 .NAR{border : 1px solid black; margin : 10px;}
 #news{flex:1; background-color: #fff;}
@@ -92,3 +93,4 @@ body{margin: 0; padding: 0;font-family: 'Open Sans', sans-serif;}
 #footer > div{padding:20px 10px; line-height: 100%;}
 #footer > div > p:first-child{padding-top : 25px;}
 #footer > div > p{margin : 0; font-size: 13px;}
+
